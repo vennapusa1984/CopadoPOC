@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Interest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Interest</value>
+    </caseValues>
+    <fields>
+        <label><!-- Event Date --></label>
+        <name>Event_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Notes --></label>
+        <name>Interest_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Type --></label>
+        <name>Interest_Type__c</name>
+        <picklistValues>
+            <masterLabel>Concert</masterLabel>
+            <translation><!-- Concert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dining</masterLabel>
+            <translation><!-- Dining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWAG</masterLabel>
+            <translation><!-- SWAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports Events</masterLabel>
+            <translation><!-- Sports Events --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- My RT --></label>
+        <name>My_RT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Reserved --></label>
+        <name>Quantity_Reserved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Quantity --></label>
+        <name>Remaining_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>Total_Cost__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Music Events Record Type --></label>
+        <name>Music_Events_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sports Interest Record Type --></label>
+        <name>Sports_Interest_Record_Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

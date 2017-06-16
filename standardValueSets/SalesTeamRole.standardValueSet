@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Financial Planner</fullName>
+        <default>false</default>
+        <label>Financial Planner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Banking Rep</fullName>
+        <default>false</default>
+        <label>Banking Rep</label>
+    </standardValue>
+</StandardValueSet>

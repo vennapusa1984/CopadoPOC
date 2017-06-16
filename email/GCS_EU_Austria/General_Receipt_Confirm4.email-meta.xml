@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Monster_Default</letterhead>
+    <name>General – Receipt Confirm 4</name>
+    <style>freeForm</style>
+    <subject>General – Receipt Confirm</subject>
+    <textOnly>Thank you for contacting Monster Customer Service with your inquiry. This email is to confirm receipt of your request. Please reference the incident number when following up on this request.
+ 
+Thank you,
+Monster Customer Service</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Monster_Default</letterhead>
+    <name>Mot de passe oublié 5</name>
+    <style>freeForm</style>
+    <subject>Mot de passe oublié 4</subject>
+    <textOnly>Bonjour,
+
+Merci d’avoir contacté le service clientèle Monster.
+
+D’après votre message, je comprends que vous avez oublié votre mot de passe.
+
+Suivez s’il vous plait les étapes suivantes pour le changer :
+
+Allez sur le site http://francais.monster.ch
+1- Cliquez sur le lien « Se connecter » en haut à droite de la page
+2- Cliquez sur « Mot de passe oublié »
+3- Entrez l’adresse email associée à votre compte
+Si vous entrez une adresse email qui n’est pas associée à votre compte Monster, vous allez voir sur le site un message vous informant qu’il n’y a pas de compte avec cette adresse. Il est possible que vous utilisiez une adresse différente dans le passé.
+4- Cliquez sur le lien « Réinitialisez le mot de passe »
+Vous recevrez une confirmation qu’un email contenant des instructions pour la création d’un nouveau mot de passe a été envoyé.
+5- Une fois le mail reçu, cliquez sur le lien pour créer un nouveau mot de passe.
+6- Entrez un nouveau code
+Note : Les mots de passe doivent être entre 8 et 20 caractères et contenir au moins une lettre et un chiffre ou un symbole.
+7- Cliquez sur le lien « Soumettre »
+
+Un message indiquera qu’un nouveau mot de passe a bien été crée et vous serez redirigé sur la page d’accueil Monster. Un email confirmant que le code a été changé vous sera envoyé.
+Si vous aviez un compte dans le passé mais que vous ne l’avez pas utilisé depuis plusieurs années, il est possible que votre compte ait été supprimé. Dans ce cas, vous n’y aurez plus accès. Créez s’il vous plait un nouveau compte ; vous pouvez pour cela utiliser la même adresse mail.
+
+Nous espérons avoir répondu à votre question. Pour plus d’informations et réponses concernant votre demande, visitez s’il vous plait la partie FAQ de notre site. 
+
+Si vous avez besoin d’assistance plus approfondie, n’hésitez pas à nous contacter en répondant à ce mail.
+
+Si jamais vous rencontrez des difficultés techniques ou recevez un message d’erreur, envoyez s’il vous plait votre demande sous la catégorie « Support technique et messages d’erreur » .
+Monster met en valeur ses utilisateurs et leur avis ; pour cette raison, vous êtes susceptible de recevoir une courte enquête de satisfaction concernant notre dernière interaction où il vous sera demandé de noter le service que je vous ai fourni sur une échelle de 0 à 10, échelle utilisée pour juger ma performance. La deuxième partie de l’enquête est dédiée au site Monster en général ; vous pouvez exprimer vos suggestions, améliorations, etc. Nous apprécierions grandement le fait que vous preniez quelques minutes pour la compléter.
+
+Bien cordialement,
+
+Le Service clientèle Monster</textOnly>
+    <type>html</type>
+</EmailTemplate>

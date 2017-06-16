@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Post</accessMethod>
+        <canvasUrl>https://hellocanvas.herokuapp.com/canvas</canvasUrl>
+        <locations>Chatter</locations>
+        <locations>Visualforce</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>phuong.tran@salesforce.com</contactEmail>
+    <description>hellocanvas</description>
+    <iconUrl>https://hellocanvas.herokuapp.com/icon.png</iconUrl>
+    <infoUrl>https://hellocanvas.herokuapp.com/welcome.jsp</infoUrl>
+    <label>Canvas Java Quick Start 1</label>
+    <logoUrl>https://hellocanvas.herokuapp.com/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://hellocanvas.herokuapp.com/callback</callbackUrl>
+        <consumerKey>3MVG9fMtCkV6eLhfp_frD2G.U8YatWh6.poFw8jIGokaYDgnu_gpIMaYKaR9Up5fwpVEsZd7P31L9rU5eJUGQ</consumerKey>
+        <scopes>Basic</scopes>
+        <scopes>Chatter</scopes>
+    </oauthConfig>
+</ConnectedApp>

@@ -1,0 +1,10 @@
+<apex:page sidebar="false">
+    <apex:pageBlock title="Hello {! $User.FirstName} {! $User.LastName}">
+        <apex:pageBlockSection title="A Section Title">
+        I'm three components deep!
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Another Section Title">
+            Another section
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

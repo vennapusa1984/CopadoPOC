@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>New Auto Response Rule</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>phuong.tran@salesforce.com</senderEmail>
+            <senderName>Support</senderName>
+            <template>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>email to case test</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>phuong.tran@gmail.com</replyToEmail>
+            <senderEmail>phuong.tran@salesforce.com</senderEmail>
+            <senderName>Monster Service</senderName>
+            <template>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

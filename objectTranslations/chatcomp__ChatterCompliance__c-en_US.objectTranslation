@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>chatcomp__Attachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment name --></label>
+        <name>chatcomp__Attachment_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL to the original attachment --></help>
+        <label><!-- Attachment url --></label>
+        <name>chatcomp__Attachment_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted --></label>
+        <name>chatcomp__Delete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted Date --></label>
+        <name>chatcomp__Delete_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Files Attached --></label>
+        <name>chatcomp__Files_Attached__c</name>
+    </fields>
+    <fields>
+        <help><!-- This flag indicates that the attachment size exceeded the limit allowed by salesforce, therefore the attachment does not appear in the notes &amp; attachments related list. --></help>
+        <label><!-- Files attached exceeded size limit --></label>
+        <name>chatcomp__Files_attached_exceeded_limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- This conversations is happening in a Customer Group. --></help>
+        <label><!-- Posted on a Group --></label>
+        <name>chatcomp__Is_a_customer_group_member__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is what the user actually wrote. If there was a banned word on the feed or comment it will be shown here. To see the post or comment as shown on the chatter screen, please see PostContent. --></help>
+        <label><!-- Original post content --></label>
+        <name>chatcomp__OriginalPostContent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Get the user input and the system output on feeds and comments, should be the same as except that &quot;Substitute banned words with character&quot; option is enabled. --></help>
+        <label><!-- PostContentInformation --></label>
+        <name>chatcomp__PostContentInformation__c</name>
+        <relationshipLabel><!-- Chatter Compliances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Post Content --></label>
+        <name>chatcomp__PostContent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post --></label>
+        <name>chatcomp__PostIdNew_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- PostId New --></label>
+        <name>chatcomp__PostId_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- PostId --></label>
+        <name>chatcomp__PostId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Created Date --></label>
+        <name>chatcomp__Post_Created_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Chatter post is made by a Contact outside of the company. --></help>
+        <label><!-- Posted by a Customer --></label>
+        <name>chatcomp__Post_made_by_an_outside_contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- The post was made on a private Group. --></help>
+        <label><!-- Posted on a private Group --></label>
+        <name>chatcomp__Posted_on_a_private_customer_group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record --></label>
+        <name>chatcomp__Related_record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related To --></label>
+        <name>chatcomp__Related_record_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related To --></label>
+        <name>chatcomp__Related_record_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Post --></label>
+        <name>chatcomp__TaskPost__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked this message is a private Chatter message. --></help>
+        <label><!-- Is a Chatter Message --></label>
+        <name>chatcomp__This_message_is_a_ChatterMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Date --></label>
+        <name>chatcomp__Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>chatcomp__User__c</name>
+        <relationshipLabel><!-- Chatter Compliances (User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deleted By --></label>
+        <name>chatcomp__deletedBy__c</name>
+        <relationshipLabel><!-- Chatter Compliances (Deleted By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Update --></label>
+        <name>chatcomp__update__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Related_Record_Chatter_Compliance --></label>
+        <name>chatcomp__Related_Record_Chatter_Compliance</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,5 @@
+<apex:page >
+
+   <apex:image url="{!$Resource.Tbird}" width="50" height="50"/>
+    
+</apex:page>

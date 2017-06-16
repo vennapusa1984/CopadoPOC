@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>VP of Priority Banking</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Fleece_VP_Priority _Banking</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Fleece_SVP_Banking</parentRole>
+</Role>

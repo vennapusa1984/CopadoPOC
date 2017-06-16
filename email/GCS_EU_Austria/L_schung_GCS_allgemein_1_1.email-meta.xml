@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Monster_Default</letterhead>
+    <name>Löschung GCS allgemein (1:1)</name>
+    <style>freeForm</style>
+    <subject>html tags test</subject>
+    <textOnly>Guten Tag [Anrede] [Nachname],
+
+herzlichen Dank für Ihre Kontaktaufnahme mit dem Monster Kundendienst. 
+
+Ich habe heute versucht, Sie telefonisch unter der von Ihnen registrierten Telefonnummer zu kontaktieren, doch leider konnte ich Sie nicht erreichen. 
+
+Bitte lassen Sie mich wissen, wann ich Sie am besten telefonisch erreichen kann.
+
+Gerne melde ich mich dann direkt bei Ihnen um Ihre Anfrage bezüglich INSERT persönlich mit Ihnen zu besprechen.
+     
+Ich freue mich auf Ihre Antwort und bedanke mich mit freundlichen Grüßen,
+
+SIGNATUR</textOnly>
+    <type>html</type>
+</EmailTemplate>

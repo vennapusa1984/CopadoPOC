@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Fleece Me customer interest</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Event_Date__c</fullName>
+        <description>Date where rep took the client to the interest</description>
+        <externalId>false</externalId>
+        <label>Event Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Interest_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Interest Notes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Interest_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Interest Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dining</fullName>
+                    <default>false</default>
+                    <label>Dining</label>
+                </value>
+                <value>
+                    <fullName>Sports Events</fullName>
+                    <default>false</default>
+                    <label>Sports Events</label>
+                </value>
+                <value>
+                    <fullName>SWAG</fullName>
+                    <default>false</default>
+                    <label>SWAG</label>
+                </value>
+                <value>
+                    <fullName>Concert</fullName>
+                    <default>false</default>
+                    <label>Concert</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>My_RT__c</fullName>
+        <externalId>false</externalId>
+        <label>My RT</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Quantity_Reserved__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity Reserved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remaining_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Remaining Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Cost__c</fullName>
+        <description>Cost to take the customer to event</description>
+        <externalId>false</externalId>
+        <label>Total Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Customer Interest</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Customer Interest Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Customer Interest</pluralLabel>
+    <recordTypes>
+        <fullName>Music_Events_Record_Type</fullName>
+        <active>true</active>
+        <label>Music Events Record Type</label>
+        <picklistValues>
+            <picklist>Interest_Type__c</picklist>
+            <values>
+                <fullName>Concert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SWAG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sports Events</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Sports_Interest_Record_Type</fullName>
+        <active>true</active>
+        <label>Sports Interest Record Type</label>
+        <picklistValues>
+            <picklist>Interest_Type__c</picklist>
+            <values>
+                <fullName>Concert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SWAG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sports Events</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

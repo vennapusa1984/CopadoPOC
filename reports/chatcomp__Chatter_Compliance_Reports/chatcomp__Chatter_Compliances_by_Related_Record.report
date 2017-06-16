@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>chatcomp__ChatterCompliance__c.chatcomp__User__c</field>
+    </columns>
+    <columns>
+        <field>chatcomp__ChatterCompliance__c.chatcomp__Post_Created_Date__c</field>
+    </columns>
+    <columns>
+        <field>chatcomp__ChatterCompliance__c.chatcomp__PostContent__c</field>
+    </columns>
+    <columns>
+        <field>chatcomp__ChatterCompliance__c.chatcomp__Files_Attached__c</field>
+    </columns>
+    <columns>
+        <field>chatcomp__ChatterCompliance__c.chatcomp__Delete__c</field>
+    </columns>
+    <columns>
+        <field>chatcomp__ChatterCompliance__c.chatcomp__Delete_date__c</field>
+    </columns>
+    <columns>
+        <field>chatcomp__ChatterCompliance__c.chatcomp__deletedBy__c</field>
+    </columns>
+    <description>DO NOT DELETE - used for custom button on Chatter Compliance Record to show all chatter compliance records for the associated record.</description>
+    <filter>
+        <criteriaItems>
+            <column>chatcomp__ChatterCompliance__c.chatcomp__Related_record__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>chatcomp__ChatterCompliance__c.chatcomp__Related_record_name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Chatter Compliances by Related Record</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$chatcomp__ChatterCompliance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>chatcomp__ChatterCompliance__c.chatcomp__Delete_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

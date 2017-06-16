@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Chatter Compliance by Arkus.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>chatcomp__Attachment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Attachment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Attachment_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Attachment name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Attachment_url__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL to the original attachment</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( chatcomp__Attachment__c , chatcomp__Attachment_name__c , &quot;_self&quot; )</formula>
+        <inlineHelpText>URL to the original attachment</inlineHelpText>
+        <label>Attachment url</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Delete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Deleted</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Delete_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Deleted Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Files_Attached__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Files Attached</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Files_attached_exceeded_limit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This flag indicates that the attachment size exceeded the limit allowed by salesforce, therefore the attachment does not appear in the notes &amp; attachments related list.</inlineHelpText>
+        <label>Files attached exceeded size limit</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Is_a_customer_group_member__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This conversations is happening in a Customer Group.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This conversations is happening in a Customer Group.</inlineHelpText>
+        <label>Posted on a Group</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__OriginalPostContent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is what the user actually wrote. If there was a banned word on the feed or comment it will be shown here. To see the post or comment as shown on the chatter screen, please see PostContent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is what the user actually wrote. If there was a banned word on the feed or comment it will be shown here. To see the post or comment as shown on the chatter screen, please see PostContent.</inlineHelpText>
+        <label>Original post content</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>chatcomp__PostContentInformation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Get the user input and the system output on feeds and comments, should be the same as except that &quot;Substitute banned words with character&quot; option is enabled.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Get the user input and the system output on feeds and comments, should be the same as except that &quot;Substitute banned words with character&quot; option is enabled.</inlineHelpText>
+        <label>PostContentInformation</label>
+        <referenceTo>chatcomp__ChatterCompliance_PostContentInformation__c</referenceTo>
+        <relationshipLabel>Chatter Compliances</relationshipLabel>
+        <relationshipName>Chatter_Compliances</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__PostContent__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Post Content</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>chatcomp__PostIdNew_url__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( chatcomp__PostId_New__c , chatcomp__PostId_New__c &amp; &quot; (original post)&quot;, &quot;_self&quot; )</formula>
+        <label>Post</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__PostId_New__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>PostId New</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__PostId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>PostId</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Post_Created_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Post Created Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Post_made_by_an_outside_contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The Chatter post is made by a Contact outside of the company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Chatter post is made by a Contact outside of the company.</inlineHelpText>
+        <label>Posted by a Customer</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Posted_on_a_private_customer_group__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The post was made on a private Group.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The post was made on a private Group.</inlineHelpText>
+        <label>Posted on a private Group</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Related_record__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Related Record</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Related_record_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Related To</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Related_record_url__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(chatcomp__Related_record__c,chatcomp__Related_record_name__c, &quot;_self&quot; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Related To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chatcomp__TaskPost__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Task Post</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__This_message_is_a_ChatterMessage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked this message is a private Chatter message.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked this message is a private Chatter message.</inlineHelpText>
+        <label>Is a Chatter Message</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__Update_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Update Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Chatter_Compliances</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__deletedBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Deleted By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Chatter_Compliances1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>chatcomp__update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Update</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Chatter Compliance</label>
+    <listViews>
+        <fullName>chatcomp__All1</fullName>
+        <columns>NAME</columns>
+        <columns>chatcomp__Related_record_url__c</columns>
+        <columns>chatcomp__PostContent__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>chatcomp__User__c</columns>
+        <columns>chatcomp__Post_Created_Date__c</columns>
+        <columns>chatcomp__Delete__c</columns>
+        <columns>chatcomp__Delete_date__c</columns>
+        <columns>chatcomp__deletedBy__c</columns>
+        <columns>chatcomp__Files_Attached__c</columns>
+        <columns>chatcomp__This_message_is_a_ChatterMessage__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>chatcomp__All_Deleted_Posts</fullName>
+        <columns>NAME</columns>
+        <columns>chatcomp__Related_record_url__c</columns>
+        <columns>chatcomp__User__c</columns>
+        <columns>chatcomp__Post_Created_Date__c</columns>
+        <columns>chatcomp__Delete__c</columns>
+        <columns>chatcomp__Delete_date__c</columns>
+        <columns>chatcomp__deletedBy__c</columns>
+        <columns>chatcomp__Files_Attached__c</columns>
+        <columns>chatcomp__This_message_is_a_ChatterMessage__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>chatcomp__Delete__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Deleted Posts</label>
+    </listViews>
+    <listViews>
+        <fullName>chatcomp__Last_7_Days</fullName>
+        <columns>NAME</columns>
+        <columns>chatcomp__Related_record_url__c</columns>
+        <columns>chatcomp__User__c</columns>
+        <columns>chatcomp__Post_Created_Date__c</columns>
+        <columns>chatcomp__Delete__c</columns>
+        <columns>chatcomp__Delete_date__c</columns>
+        <columns>chatcomp__deletedBy__c</columns>
+        <columns>chatcomp__Files_Attached__c</columns>
+        <columns>chatcomp__This_message_is_a_ChatterMessage__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>chatcomp__Post_Created_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:7</value>
+        </filters>
+        <label>Last 7 Days</label>
+    </listViews>
+    <listViews>
+        <fullName>chatcomp__Last_7_Days_Attachments</fullName>
+        <columns>NAME</columns>
+        <columns>chatcomp__Related_record_url__c</columns>
+        <columns>chatcomp__User__c</columns>
+        <columns>chatcomp__Post_Created_Date__c</columns>
+        <columns>chatcomp__Delete__c</columns>
+        <columns>chatcomp__Delete_date__c</columns>
+        <columns>chatcomp__deletedBy__c</columns>
+        <columns>chatcomp__Files_Attached__c</columns>
+        <columns>chatcomp__This_message_is_a_ChatterMessage__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>chatcomp__Post_Created_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:7</value>
+        </filters>
+        <filters>
+            <field>chatcomp__Files_Attached__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Last 7 Days - Attachments</label>
+    </listViews>
+    <listViews>
+        <fullName>chatcomp__Last_7_Days_Deleted</fullName>
+        <columns>NAME</columns>
+        <columns>chatcomp__Post_Created_Date__c</columns>
+        <columns>chatcomp__Related_record_url__c</columns>
+        <columns>chatcomp__User__c</columns>
+        <columns>chatcomp__Delete__c</columns>
+        <columns>chatcomp__Delete_date__c</columns>
+        <columns>chatcomp__deletedBy__c</columns>
+        <columns>chatcomp__Files_Attached__c</columns>
+        <columns>chatcomp__This_message_is_a_ChatterMessage__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>chatcomp__Post_Created_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:7</value>
+        </filters>
+        <filters>
+            <field>chatcomp__Delete__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Last 7 Days - Deleted</label>
+    </listViews>
+    <listViews>
+        <fullName>chatcomp__Today_s_Posts</fullName>
+        <columns>NAME</columns>
+        <columns>chatcomp__Related_record_url__c</columns>
+        <columns>chatcomp__User__c</columns>
+        <columns>chatcomp__Post_Created_Date__c</columns>
+        <columns>chatcomp__Delete__c</columns>
+        <columns>chatcomp__Delete_date__c</columns>
+        <columns>chatcomp__deletedBy__c</columns>
+        <columns>chatcomp__Files_Attached__c</columns>
+        <columns>chatcomp__This_message_is_a_ChatterMessage__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>chatcomp__Post_Created_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today&apos;s Posts</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CC-{0000}</displayFormat>
+        <label>ChatterCompliance Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Chatter Compliances</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>chatcomp__User__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>chatcomp__Delete__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>chatcomp__Delete_date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>chatcomp__Files_Attached__c</customTabListAdditionalFields>
+        <searchFilterFields>chatcomp__Delete__c</searchFilterFields>
+        <searchFilterFields>chatcomp__Files_Attached__c</searchFilterFields>
+        <searchResultsAdditionalFields>chatcomp__Related_record_url__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>chatcomp__Post_Created_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>chatcomp__Delete__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>chatcomp__deletedBy__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>chatcomp__Delete_date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>chatcomp__Related_Record_Chatter_Compliance</fullName>
+        <availability>online</availability>
+        <description>All related chatter compliance records for the record that this chatter compliance is related to.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Related Record Chatter Compliance</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/00OA0000003uhYh?pv0={!chatcomp__ChatterCompliance__c.chatcomp__Related_record__c}</url>
+    </webLinks>
+</CustomObject>

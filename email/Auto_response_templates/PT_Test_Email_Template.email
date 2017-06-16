@@ -1,0 +1,6 @@
+Hello {!Contact.FirstName}, 
+
+Thanks for contacting us.  We understand you are interested in our product please contact us at {!Organization.Phone}
+
+Sincerely,
+{!User.FirstName} {!User.FirstName}

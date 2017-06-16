@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <consumerKey>400175530184879</consumerKey>
+    <consumerSecret>o5aUjFG42DXn0y2+I6VtTaySF4PnqzOr1EeDOyMLxrFwQRj3Ygtq1w==</consumerSecret>
+    <executionUser>phuongtran2k-badge@salesforce.com</executionUser>
+    <friendlyName>FacebookAuthProvider</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <portal>Customer Portal</portal>
+    <providerType>Facebook</providerType>
+    <registrationHandler>AutocreatedRegHandler1435026671354</registrationHandler>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+</AuthProvider>

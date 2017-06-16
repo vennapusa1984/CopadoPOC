@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>US</label>
+            <name>US</name>
+        </dataCategory>
+        <dataCategory>
+            <label>EMEA</label>
+            <name>EMEA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Japan</label>
+            <name>Japan</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Geography</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

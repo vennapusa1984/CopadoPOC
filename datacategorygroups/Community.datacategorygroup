@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Snack Foods</label>
+            <name>Snack_Foods</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Beverages</label>
+            <name>Beverages</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Cooking</label>
+            <name>Cooking</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Community</label>
+    <objectUsage>
+        <object>Question</object>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

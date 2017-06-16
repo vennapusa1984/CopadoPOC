@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>test custom setting</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CustomFieldValue__c</fullName>
+        <externalId>false</externalId>
+        <label>CustomFieldValue</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CustomSettingField__c</fullName>
+        <externalId>false</externalId>
+        <label>CustomSettingField</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>First Custom Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

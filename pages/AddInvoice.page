@@ -1,0 +1,13 @@
+<apex:page standardController="Invoice__c" extensions="InvoiceControllerExtension">
+    {!greeting} <p/>
+	    <apex:form >
+	        Opportunity:<apex:inputField value="{!Invoice__c.Opportunity__c}"/> <p/>
+            Billing Street:<apex:inputField value="{!account.billingstreet}"/> <p/>
+            City:<apex:inputField value="{!account.billingcity}"/> <p/>
+            State:<apex:inputField value="{!account.billingstate}"/> <p/>
+            Zip:<apex:inputField value="{!account.billingpostalcode}"/> <p/>
+            Discount Code: <apex:inputField value="{!account.Default_Discount_Code__c}"/> <p/>
+            <apex:inputTextarea value="{!Invoice__c.Products__c}"/>
+            <apex:commandButton value="Save" action="{!save}"/>  
+	    </apex:form>
+</apex:page>

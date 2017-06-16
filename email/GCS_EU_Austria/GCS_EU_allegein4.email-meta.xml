@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Monster_Default</letterhead>
+    <name>Löschung GCS allgemein (1:1)4</name>
+    <style>freeForm</style>
+    <subject>data loader subj</subject>
+    <textOnly>Guten Tag Frau/ Herr {!Contact.LastName},  
+ 
+vielen Dank für Ihre E-Mail. 
+   
+Ihr Auftrag zur Löschung Ihrer Stellenanzeige &quot;Titel&quot; wurde durchgeführt.  Die Zugriffszahlen belaufen sich auf XXX Hits. 
+In Kürze - nach dem nächsten Online-Update - wird Ihre Anzeige auf unseren Portalen gelöscht sein. 
+ 
+Wir bitten Sie eventuelle Rückfragen hierzu per E-Mail an GlobalCustomerServices@monster.at zu adressieren. 
+Unser Global Customer Services-Team steht Ihnen von Montag bis Donnerstag in der Zeit von 08:30 Uhr bis 18:00 Uhr bzw. Freitags von 08:30 Uhr bis 16:00 Uhr zur Verfügung.  
+ 
+Mit freundlichen Grüßen  
+ 
+Ihr Back Office Team 
+ 
+http://www.monster.at  | http://www.jobpilot.at 
+ 
+Monster Worldwide Austria GmbH;  Salztorgasse 2, 1010 Wien; Firmenbuchnr.: 170369v; Firmenbuchgericht: Handelsgericht Wien; Geschäftsführer: Andrea Bertone, Bernd Kraft 
+ 
+ACHTUNG:  
+ 
+Diese Nachricht sowie eventuelle Anhänge können geschützte oder vertrauliche Information enthalten und sind nur für den oben genannten Empfänger gedacht. Andere Personen dürfen den Inhalt dieser Nachricht weder offenbaren noch kopieren oder verteilen. Die weitere Nutzung, Verbreitung oder Vervielfältigung dieser E-Mail ist nicht erlaubt und gegebenenfalls gesetzeswidrig. Sollten Sie diese E-Mail irrtümlich erhalten haben oder nicht der autorisierter Empfänger sein, so löschen Sie diese Nachricht sowie deren Anhänge bitte unverzüglich und informieren Sie den Absender. 
+Ihr Anzeigen-Löschungsauftrag</textOnly>
+    <type>html</type>
+</EmailTemplate>

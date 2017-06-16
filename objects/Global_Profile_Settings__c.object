@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Global constants for different profiles</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>General_Inquiry_Origin_Default__c</fullName>
+        <externalId>false</externalId>
+        <label>General Inquiry Origin Default</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>General_Inquiry_Priority_Default__c</fullName>
+        <externalId>false</externalId>
+        <label>General Inquiry Priority Default</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>General_Inquiry_Status_Default__c</fullName>
+        <externalId>false</externalId>
+        <label>General Inquiry Status Default</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>General_Inquiry_Type_Default__c</fullName>
+        <externalId>false</externalId>
+        <label>General Inquiry Type Default</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Group__c</fullName>
+        <description>The functional group of the user - used in areas such as creating cases/general inquiries</description>
+        <externalId>false</externalId>
+        <label>User Group</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Global Profile Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

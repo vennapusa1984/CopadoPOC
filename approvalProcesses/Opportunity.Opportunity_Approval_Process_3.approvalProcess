@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Type</field>
+        <field>StageName</field>
+        <field>CloseDate</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Manager of Opp Owner needs to approve</description>
+        <entryCriteria>
+            <booleanFilter>(1 AND 2 AND 3) or (4 and 5 and 6) or (7 and 8 and 9) or (10 and 11 and 12)</booleanFilter>
+            <criteriaItems>
+                <field>Opportunity.CurrencyIsoCode</field>
+                <operation>equals</operation>
+                <value>USD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterThan</operation>
+                <value>&quot;USD 100,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>lessThan</operation>
+                <value>&quot;USD 250,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.CurrencyIsoCode</field>
+                <operation>equals</operation>
+                <value>EUR</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterThan</operation>
+                <value>&quot;EUR 50,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>lessThan</operation>
+                <value>&quot;EUR 150,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.CurrencyIsoCode</field>
+                <operation>equals</operation>
+                <value>JPY</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterThan</operation>
+                <value>&quot;JPY 100,000,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>lessThan</operation>
+                <value>&quot;JPY 200,000,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.CurrencyIsoCode</field>
+                <operation>equals</operation>
+                <value>GBP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterThan</operation>
+                <value>&quot;GBP 40,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>lessThan</operation>
+                <value>&quot;GBP 120,000&quot;</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Opp Owner Manager Approval</label>
+        <name>Opp_Owner_Manager_Approval</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>jaylstock.soa5r9pqh4ao.j6eawvkkr0gi@salesforce.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.CurrencyIsoCode</field>
+                <operation>equals</operation>
+                <value>USD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterOrEqual</operation>
+                <value>&quot;USD 250,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>lessThan</operation>
+                <value>&quot;USD 5,000,000&quot;</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>US Director Approval</label>
+        <name>US_Director_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>shriraj.shah.q11txm2mqs9u.ocv5pdt6zdbg@salesforce.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.CurrencyIsoCode</field>
+                <operation>equals</operation>
+                <value>EUR</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterOrEqual</operation>
+                <value>&quot;EUR 150,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>lessThan</operation>
+                <value>&quot;USD 5,000,000&quot;</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>EMEA Director Approval</label>
+        <name>EMEA_Director_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>shriraj.shah.q11txm2mqs9u.ocv5pdt6zdbg@salesforce.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.CurrencyIsoCode</field>
+                <operation>equals</operation>
+                <value>GBP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterThan</operation>
+                <value>&quot;USD 40,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>lessThan</operation>
+                <value>&quot;USD 5,000,000&quot;</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>EMEA (GBP) Approval</label>
+        <name>EMEA_GBP_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>chad.kelly.lto0hydcztrz.dsmmeecv13df@salesforce.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.CurrencyIsoCode</field>
+                <operation>equals</operation>
+                <value>JPY</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterOrEqual</operation>
+                <value>&quot;JPY 200,000,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>lessThan</operation>
+                <value>&quot;USD 5,000,000&quot;</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>APAC Director Approval</label>
+        <name>APAC_Director_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>stangirala.xosrr1xlfa2j.qbi8cmnqjihq@salesforce.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.Amount</field>
+                <operation>greaterOrEqual</operation>
+                <value>&quot;USD 5,000,000&quot;</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>CEO Approval</label>
+        <name>CEO_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Approval Process for Declarative Badge</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>(1 AND 2) or (3 AND 4 ) or (5 AND 6) or (7 and 8)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.CurrencyIsoCode</field>
+            <operation>equals</operation>
+            <value>USD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterThan</operation>
+            <value>&quot;USD 100,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CurrencyIsoCode</field>
+            <operation>equals</operation>
+            <value>EUR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterThan</operation>
+            <value>&quot;EUR 50,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CurrencyIsoCode</field>
+            <operation>equals</operation>
+            <value>JPY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterThan</operation>
+            <value>&quot;JPY 100,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CurrencyIsoCode</field>
+            <operation>equals</operation>
+            <value>GBP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterThan</operation>
+            <value>&quot;GBP 40,000&quot;</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Opportunity_Approval</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_Mgmt_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Opportunity_Rejection_Notificiation</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Uncheck_Mgmt_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Uncheck_Mgmt_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Opportunity Approval Process3</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Case --></label>
+        <name>Related_Case__c</name>
+        <relationshipLabel><!-- Service Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Order ID --></label>
+        <name>Service_Order_ID__c</name>
+    </fields>
+    <sharingReasons>
+        <label><!-- RW Service Engineer --></label>
+        <name>RW_Service_Engineer</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Read Only Sales Rep --></label>
+        <name>Read_Only_Sales_Rep</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

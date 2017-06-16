@@ -1,0 +1,16 @@
+<apex:page controller="AssetListController">
+        <apex:form >
+        <apex:pageBlock title="Portfolio List" id="portfolio_list">
+            
+            <apex:pageBlockTable value="{! assets }" var="ass">
+
+                <apex:column value="{! ass.Name }"/>
+                <apex:column value="{! ass.Current_Price__c }"/>
+                <apex:column value="{! ass.Current_Value__c }"/>
+                <apex:column value="{! ass.PurchaseDate }"/>
+    
+			</apex:pageBlockTable>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

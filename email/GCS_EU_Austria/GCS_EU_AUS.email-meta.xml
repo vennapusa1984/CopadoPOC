@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Monster_Default</letterhead>
+    <name>Freischaltung CV-DB auf monster.at</name>
+    <style>freeForm</style>
+    <subject>data loader subj</subject>
+    <textOnly>Guten Tag Frau/ Herr {!Contact.LastName}, 
+ 
+vielen Dank fŸr die Buchung der nationalen Lebenslaufdatenbank auf monster.at   
+Ihr pers_nlicher Zugang wurde soeben eingerichtet.  
+In KŸrze erhalten Sie eine Systembenachrichtigung zur Aktivierung Ihres Accounts, in der Ihr tempor_res Passwort enthalten ist. Bitte loggen Sie sich unter folgendem Link mit Ihren Zugangsdaten ein: 
+ 
+http://rekrutierung.monster.at 
+Benutzername: XXX 
+und Ihrem in der E-Mail genannten Passwort  
+ 
+Ihnen steht unsere Lebenslaufdatenbank ab sofort bis zum Ablauf des gebuchten Zeitraums zur VerfŸgung. 
+ 
+Wir bitten Sie eventuelle RŸckfragen hierzu per E-Mail an GlobalCustomerServices@monster.at zu adressieren. 
+Unser Global Customer Services-Team steht Ihnen von Montag bis Donnerstag in der Zeit von 08:30 Uhr bis 18:00 Uhr bzw. Freitags von 08:30 Uhr bis 16:00 Uhr zur VerfŸgung.  
+ 
+Mit freundlichen GrŸ§en  
+ 
+Ihr Back Office Team 
+ 
+http://www.monster.at  | http://www.jobpilot.at 
+ 
+Monster Worldwide Austria GmbH;  Salztorgasse 2, 1010 Wien; Firmenbuchnr.: 170369v; Firmenbuchgericht: Handelsgericht Wien; Gesch_ftsfŸhrer: Andrea Bertone, Bernd Kraft 
+  
+ACHTUNG:  
+ 
+Diese Nachricht sowie eventuelle Anh_nge k_nnen geschŸtzte oder vertrauliche Information enthalten und sind nur fŸr den oben genannten Empf_nger gedacht. Andere Personen dŸrfen den Inhalt dieser Nachricht weder offenbaren noch kopieren oder verteilen. Die weitere Nutzung, Verbreitung oder Vervielf_ltigung dieser E-Mail ist nicht erlaubt und gegebenenfalls gesetzeswidrig. Sollten Sie diese E-Mail irrtŸmlich erhalten haben oder nicht der autorisierter Empf_nger sein, so l_schen Sie diese Nachricht sowie deren Anh_nge bitte unverzŸglich und informieren Sie den Absender</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Order Assignment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Order Assignments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Service Order --></label>
+        <name>Service_Order__c</name>
+        <relationshipLabel><!-- Service Order Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Role --></label>
+        <name>Service_Role__c</name>
+        <picklistValues>
+            <masterLabel>Sales Rep</masterLabel>
+            <translation><!-- Sales Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Engineer</masterLabel>
+            <translation><!-- Service Engineer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Service Order Assignments --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

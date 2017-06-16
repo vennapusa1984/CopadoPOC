@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Industry Assignment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Industry Assignments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Industry Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Industry Classification --></label>
+        <name>Industry_Classification__c</name>
+        <relationshipLabel><!-- Industry Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Industry --></label>
+        <name>Primary_Industry__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BatchApexId Log --></label>
+        <name>chatcomp__BatchApexId_Log__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a valid email address for an already existing compliance email box in order to receive an email for every Chatter post including the person who posted it, the content, date/time stamp, record related to, and any attachments. --></help>
+        <label><!-- Email --></label>
+        <name>chatcomp__ChatterCompliance_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChatterCompliance Owner Name --></label>
+        <name>chatcomp__ChatterCompliance_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click the lookup magnifying glass to search for a User or Queue related to the Chatter Compliance Object to own the Chatter Compliance records once they have been created. --></help>
+        <label><!-- ChatterCompliance Owner --></label>
+        <name>chatcomp__ChatterCompliance_Owner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies whether the Chatter Compliance is paused (meaning all triggers will not be executed and no CC records will be created or updated) --></help>
+        <label><!-- Chatter Compliance paused --></label>
+        <name>chatcomp__Chatter_Compliance_paused__c</name>
+    </fields>
+    <fields>
+        <help><!-- Make this checkbox true in order to delete the original Chatter post on the same schedule as the above setting for deleting the Chatter Compliance records. --></help>
+        <label><!-- DeleteFeedItem --></label>
+        <name>chatcomp__DeleteFeedItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete original posts schedule job id --></label>
+        <name>chatcomp__Delete_original_content_schedule_job_id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow for an administrator to NOT create the Chatter Compliance record and ONLY send an email to the external Email Address that is setup for compliance via the settings screen. --></help>
+        <label><!-- Do NOT create the chatter compliance rec --></label>
+        <name>chatcomp__Do_NOT_create_the_chatter_compliance_rec__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow for an administrator to select to NOT keep any attachments that are added to a Chatter Post. --></help>
+        <label><!-- Do not keep any attachments --></label>
+        <name>chatcomp__Do_not_keep_any_attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set the error message that the user sees when they try to use one of the blocked words. --></help>
+        <label><!-- Message to show on error --></label>
+        <name>chatcomp__Message_to_show_on_error__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ID of the Job to create Compliances for Private Messages. --></help>
+        <label><!-- Private Messages Job ID --></label>
+        <name>chatcomp__PrivateMessagesJobID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The periodicity of the schedule job that creates Compliances for every Chatter private message. --></help>
+        <label><!-- Private Messages Job Periodicity --></label>
+        <name>chatcomp__PrivateMessagesJobPeriodicity__c</name>
+    </fields>
+    <fields>
+        <label><!-- ScheduleJobId Log --></label>
+        <name>chatcomp__ScheduleJobId_Log__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id of the scheduled job to delete Chatter Compliance records. --></help>
+        <label><!-- Scheduled Job Id --></label>
+        <name>chatcomp__Scheduled_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the word blocker is configured to show an error message when a banned word is posted or commented and this box is checked, then a notification email will be sent to the system administrator. --></help>
+        <label><!-- Send email if banned word error --></label>
+        <name>chatcomp__Send_email_if_banned_word_error__c</name>
+    </fields>
+    <fields>
+        <help><!-- When this box is checked, an email notification is sent when a &apos;banned&apos; word is posted. --></help>
+        <label><!-- Send email if showing banned words --></label>
+        <name>chatcomp__Send_email_if_showing_banned_words__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the word blocker is configure to substitute banned words and this box is checked then an email will be sent to the system administrator notifying of the change. --></help>
+        <label><!-- Send email if substituting words --></label>
+        <name>chatcomp__Send_email_if_substituting_words__c</name>
+    </fields>
+    <fields>
+        <help><!-- If set, the word filtering for post and comments gets disabled. --></help>
+        <label><!-- Word Blocker - Show EVERY word --></label>
+        <name>chatcomp__Show_EVERY_word_on_word_blocker__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked,  when a banned word is detected while posting a feed or comment, then substitute that word for a set of characters. --></help>
+        <label><!-- Word Blocker - Replace words with chars --></label>
+        <name>chatcomp__Substitute_bad_words_for_characters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of days to retain Compliance Chatter records. --></help>
+        <label><!-- Time to delete --></label>
+        <name>chatcomp__Time_to_delete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of days to retain Chatter activity. --></help>
+        <label><!-- Time to delete original records --></label>
+        <name>chatcomp__Time_to_delete_original_records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Option to show an error message when posting banned words --></help>
+        <label><!-- Word Blocker - Show an error message --></label>
+        <name>chatcomp__WordBlocker_ShowAnErrorMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Id for the schedule job that erases post content information. --></help>
+        <label><!-- delete post content information job --></label>
+        <name>chatcomp__delete_post_content_information_job__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow for an administrator to set the subject line of the email alerts that get sent to the Compliance Email box via the Settings screen. --></help>
+        <label><!-- Email subject --></label>
+        <name>chatcomp__selectedEmailSubject__c</name>
+    </fields>
+</CustomObjectTranslation>
