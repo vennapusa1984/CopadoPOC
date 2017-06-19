@@ -300,6 +300,18 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Naveen_Custom1__c</fullName>
+        <externalId>false</externalId>
+        <label>Naveen_Custom1</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Naveen_Custom__c</fullName>
         <externalId>false</externalId>
         <label>Naveen_Custom</label>
@@ -503,15 +515,11 @@
         <picklistValues>
             <picklist>ForecastCategoryName</picklist>
             <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Closed</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Commit</fullName>
+                <fullName>Pipeline</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -519,42 +527,29 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Pipeline</fullName>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Business</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Employee Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>External Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public Relations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Seminar - Internal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Seminar - Partner</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -562,24 +557,44 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Word of mouth</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Management_Approval_Stage__c</picklist>
-            <values>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CEO Approval</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Director Approval</fullName>
                 <default>false</default>
@@ -589,18 +604,15 @@
                 <default>true</default>
             </values>
             <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Manager Approval</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Type</picklist>
-            <values>
-                <fullName>Existing Business</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>New Business</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -612,56 +624,9 @@
         <description>Used for standard opportunity</description>
         <label>Standard Opportunity</label>
         <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Employee Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>External Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public Relations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Seminar - Internal</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -669,24 +634,44 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Trade Show</fullName>
+                <fullName>Public Relations</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Web</fullName>
+                <fullName>Partner</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Word of mouth</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Management_Approval_Stage__c</picklist>
-            <values>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>CEO Approval</fullName>
                 <default>false</default>
@@ -696,22 +681,49 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Manager Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Initial Submission</fullName>
                 <default>true</default>
             </values>
             <values>
-                <fullName>Manager Approval</fullName>
+                <fullName>Approved</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
             <picklist>Type</picklist>
             <values>
-                <fullName>Existing Business</fullName>
+                <fullName>New Business</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>New Business</fullName>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
