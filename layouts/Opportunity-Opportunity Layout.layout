@@ -63,6 +63,10 @@
                 <behavior>Edit</behavior>
                 <field>Naveen_Custom1__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Naveen_Custom2__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
