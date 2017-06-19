@@ -300,6 +300,18 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Naveen_Custom2__c</fullName>
+        <externalId>false</externalId>
+        <label>Naveen_Custom2</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>NextStep</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
