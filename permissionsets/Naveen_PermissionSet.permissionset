@@ -32,16 +32,7 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>
-        Event</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>EditPublicFilters</name>
-    </userPermissions>
-       <userPermissions>
-        <enabled>true</enabled>
-        <name>EditPublicReports</name>
+        <name>EditEvent</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -128,4 +119,3 @@
         <name>ViewSetup</name>
     </userPermissions>
 </PermissionSet>
-
