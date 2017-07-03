@@ -32,7 +32,16 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>EditEvent</name>
+        <name>
+        Event</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EditPublicFilters</name>
+    </userPermissions>
+       <userPermissions>
+        <enabled>true</enabled>
+        <name>EditPublicReports</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
